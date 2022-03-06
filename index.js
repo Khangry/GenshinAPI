@@ -16,6 +16,9 @@ function removeTags(str) {
    ''
     return str.replace( /(<([^>]+)>)/ig, '');
 }
+app.get('/' (req,res) => {
+ res.send("hello world")
+})
 app.get('/search/character/:char', async(req, res) => {
    const { data } = await axios.get(`https://paimon.moe/characters/${req.params.char.toLowerCase().replace(/\s/g, '_') }`)
   const $ = cheerio.load(data)
