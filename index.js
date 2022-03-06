@@ -2,7 +2,7 @@ const express = require('express')
 const cheerio = require('cheerio');
 const axios = require('axios')
 const cors = require('cors')
-
+// Thằng ngu lày chỉ 2 lần rồi nhá=))))))
 const app = express()
 const PORT = process.env.PORT || 3000;
 
