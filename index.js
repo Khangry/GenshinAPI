@@ -1,9 +1,12 @@
 const express = require('express')
 const cheerio = require('cheerio');
 const axios = require('axios')
+const cors = require('cors')
+
 const app = express()
 const port = 3000
 
+app.use(cors())
 function removeTags(str) {
     if ((str===null) || (str===''))
         return false;
