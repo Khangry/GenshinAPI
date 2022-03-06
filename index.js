@@ -4,7 +4,7 @@ const axios = require('axios')
 const cors = require('cors')
 
 const app = express()
-const port =process.env.PORT ||  3000
+const PORT = process.env.PORT || 3000;
 
 app.use(cors())
 function removeTags(str) {
@@ -119,6 +119,6 @@ app.get('/search/character/:char', async(req, res) => {
  })
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(PORT, () => {
+  console.warn(App listening on http://localhost:${PORT});
+});
